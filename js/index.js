@@ -1,0 +1,4 @@
+'use strict'
+
+// Modal contact
+

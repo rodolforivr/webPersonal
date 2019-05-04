@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background: url("../img/bg.svg") no-repeat;
+  background-size: cover; }
+
+a {
+  transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s; }
+
+.container {
+  margin: 0px 100px; }
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px; }
+  header .container .logo img {
+    width: 48px;
+    border-radius: 100px;
+    vertical-align: top; }
+  header .container nav a {
+    text-decoration: none;
+    color: #112258;
+    font-weight: 700;
+    font-size: 0.750em;
+    display: inline-block;
+    margin-left: 30px; }
+    header .container nav a:hover {
+      color: #3C6AFF; }
+  header .container nav .important-btn-2 {
+    color: #3C6AFF;
+    border: #3C6AFF solid 2px;
+    border-radius: 50px;
+    padding: 5px 15px; }
+    header .container nav .important-btn-2:hover {
+      color: #ffffff;
+      background: #3C6AFF; }
+
+.aboutMe .container {
+  display: flex; }
+  .aboutMe .container .presentation p {
+    margin-top: 120px;
+    color: #112258;
+    font-size: 2em;
+    line-height: 50px;
+    min-width: 520px; }
+  .aboutMe .container .presentation a {
+    color: #ffffff;
+    background: #3C6AFF;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.875em;
+    border-radius: 100px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: #3C6AFF solid 2px; }
+    .aboutMe .container .presentation a:hover {
+      background: none;
+      color: #3C6AFF; }
+  .aboutMe .container .mockup img {
+    width: 690px;
+    min-width: 690px;
+    vertical-align: top;
+    position: relative;
+    left: 30px; }
+
+.rrss {
+  position: absolute;
+  bottom: 50px; }
+  .rrss a {
+    margin-right: 10px;
+    color: #112258; }
+    .rrss a:hover {
+      color: #3C6AFF; }
+
+.modalContact {
+  position: absolute;
+  background: #112258;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none; }
+  .modalContact .container {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 100%; }
+    .modalContact .container .contPrincipal {
+      margin: 0px auto;
+      background: #F5F8FF;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      color: #112258; }
+      .modalContact .container .contPrincipal .marginBottom {
+        margin-bottom: 10px; }
+      .modalContact .container .contPrincipal .title {
+        font-size: 1.4em;
+        font-weight: 700; }
+      .modalContact .container .contPrincipal .contInfo {
+        display: flex; }
+        .modalContact .container .contPrincipal .contInfo .boldTextModal {
+          font-weight: 700;
+          margin-right: 10px; }
+      .modalContact .container .contPrincipal .btn {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.875em;
+        text-decoration: none;
+        background: #3C6AFF;
+        border: #3C6AFF solid 2px;
+        padding: 5px 20px;
+        display: inline-block;
+        border-radius: 100px; }
+        .modalContact .container .contPrincipal .btn:hover {
+          color: #3C6AFF;
+          background: none; }
+
+/*# sourceMappingURL=styles.css.map */
