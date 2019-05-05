@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     
-    <!--Scripts-->
-    <script src="./js/index.js"></script>
-    <script defer src="./fontAw/js/all.js"></script>
+    
 </head>
 <body>
     <header>
@@ -25,7 +23,7 @@
                 <a href="#">DESCARGA MI CV</a>
                 <a href="#">BLOG</a>
                 
-                <a href="#" id="modalContact" onclick="" class="important-btn-2">CONTACTAR</a>
+                <a href="#" id="abrir" class="important-btn-2" >CONTACTAR</a>
 
                 <button  class="responsiveBtn"><img src="" alt=""></button>
             </nav>
@@ -36,35 +34,42 @@
         <div class="container">
             <div class="presentation">
                 <p>¡Hola! Soy Rodolfo Rivera <strong>diseñador de experiencias e interfaces de usuario</strong> y te ayudaré con tu proyecto ;)</p>
-                <a href="#">PROYECTOS REALIZADOS</a>
+                <a href="https://behance.net/soyrcom/"><i class="fas fa-briefcase"></i> PROYECTOS REALIZADOS</a>
             </div>
             <div class="mockup">
-                <img src="./img/mockup.png" alt="">
+                <img src="./img/mockup.png" alt="Diseño UI & UX">
             </div>
         </div>
     </section>
 
-        
-        <section class="rrss container">
+    <section class="rrss container">
             <a href="https://facebook.com/soyrcom/"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com/soyrcom/"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com/soyrcom/"><i class="fab fa-instagram"></i></a>
             <a href="https://linkedin.com/in/soyrcom/"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://behance.net/soyrcom/"><i class="fab fa-behance"></i></a>
             <a href="https://github.com/soyrcom/"><i class="fab fa-github"></i></a>
-        </section>
+    </section>
 
-        <section id="modalContact" class="modalContact">
-            <div class="container">
-                <div class="contPrincipal">
-                    <button id="exitModal" class="exitModal">Salir del modal</button>
+    <div id="modal_contacto">
+        <div class="container">
+            <div class="contPrincipal">
+                <header>
+                    <a href="#" id="close" class="close">&times;</a>
+                </header>
+                <div class="cont">
                     <p class="title marginBottom">Contacto</p>
                     <div class="contInfo marginBottom"><p class="boldTextModal">Email</p><p>hola@soyrodolfo.com</p></div>
                     <div class="contInfo marginBottom"><p class="boldTextModal">Whatsapp</p><p>+58 414 660 6484</p></div>
-                    <a href="#" class="btn">Whatsapp</a>
+                    <a href="https://api.whatsapp.com/send?phone=+584146606484&text=Hola quiero información sobre tus servicios de UX/UI" class="btn">Whatsapp</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
+    <!--Scripts-->
+    
+    <script defer src="./fontAw/js/all.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
