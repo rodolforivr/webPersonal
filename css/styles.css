@@ -171,6 +171,11 @@ header .container {
       margin-top: 100px !important;
       min-width: 400px !important; } }
 @media screen and (max-width: 800px), (max-width: 700px) {
+  @keyframes despSuave {
+    from {
+      top: -10px; }
+    to {
+      down: 0px; } }
   header .container .menuDesp {
     opacity: 0;
     top: 90px;
@@ -186,16 +191,22 @@ header .container {
     header .container .menuDesp a {
       margin: 10px; }
   header .container .opacity {
-    opacity: 1; }
+    opacity: 1;
+    animation-name: despSuave;
+    animation-duration: 2s; }
 
   .rrss {
     position: relative;
-    top: 100px; } }
-@media screen and (max-width: 700px), (max-width: 600px) {
+    padding: 20px 0px; } }
+@media screen and (max-width: 700px) {
   header .container nav {
     top: 90px;
-    left: 65%; } }
+    left: 69% !important; } }
 @media screen and (max-width: 600px) {
+  header .container nav {
+    top: 90px;
+    left: 65% !important; }
+
   .aboutMe .container .presentation {
     text-align: center; }
   .aboutMe .container .mockup {
@@ -215,29 +226,25 @@ header .container {
 @media screen and (max-width: 500px) {
   header .container nav {
     top: 90px;
-    left: 60%; } }
+    left: 59% !important; } }
 @media screen and (max-width: 400px) {
   header .container nav {
     top: 90px;
-    left: 50%; }
+    left: 50% !important; }
 
   .aboutMe .container .presentation p {
     font-size: 1.2em !important;
     margin-top: 100px !important;
     min-width: 280px !important; }
   .aboutMe .container .presentation a {
-    font-size: 0.875em; } }
-@media screen and (max-width: 400px) {
-  header .container nav {
-    top: 90px;
-    left: 40%; }
+    font-size: 0.875em; }
 
   .rrss {
     margin: 20px 0px; } }
 @media screen and (max-width: 320px) {
   header .container nav {
     top: 90px;
-    left: 40%; }
+    left: 35% !important; }
 
   .aboutMe .container .presentation p {
     font-size: 1.2em !important;

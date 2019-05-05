@@ -285,7 +285,10 @@ header {
 @media screen and (max-width: 800px), (max-width: 700px) {
     header {
         .container{
-            
+            @keyframes despSuave{
+                from {top: -10px;}
+                to {down: 0px;}
+            }
             
             .menuDesp {
                 opacity: 0;
@@ -299,6 +302,7 @@ header {
                 box-shadow: rgba(17, 34, 90, 0.2) 0px 0px 10px; 
                 padding: 20px;
                 border-radius: 10px;
+                
                 a {
                      
                     margin: 10px;
@@ -306,23 +310,25 @@ header {
             }
             .opacity {
                 opacity:1;
+                animation-name: despSuave;
+                animation-duration: 2s;
             }
         }
 
     }
     .rrss {
         position:relative;
-        top: 100px;
+        padding: 20px 0px;
     }
 }
 
-@media screen and (max-width: 700px), (max-width: 600px) {
+@media screen and (max-width: 700px) {
     header {
         .container{
             
             nav {
                 top: 90px;
-                left: 65%;
+                left: 69% !important;
                 
             }
         }
@@ -333,6 +339,17 @@ header {
 
 
 @media screen and (max-width: 600px) {
+    header {
+        .container{
+            
+            nav {
+                top: 90px;
+                left: 65% !important;
+                
+            }
+        }
+
+    }
     .aboutMe {
         .container {
             .presentation {
@@ -371,7 +388,7 @@ header {
             
             nav {
                 top: 90px;
-                left: 60%;
+                left: 59% !important;
                 
             }
         }
@@ -385,7 +402,7 @@ header {
             
             nav {
                 top: 90px;
-                left: 50%;
+                left: 50% !important;
                 
             }
         }
@@ -405,31 +422,19 @@ header {
             }
         }
     }
-}
-
-@media screen and (max-width: 400px) {
-    header {
-        .container{
-            
-            nav {
-                top: 90px;
-                left: 40%;
-                
-            }
-        }
-
-    }
     .rrss {
         margin:20px 0px; 
     }
 }
+
+
 @media screen and (max-width: 320px) {
     header {
         .container{
             
             nav {
                 top: 90px;
-                left: 40%;
+                left: 35% !important;
                 
             }
         }
