@@ -17,14 +17,9 @@ cerrar.addEventListener('click', function(){
 });
 
 // Responsive menu
-
-
-
-responsive.addEventListener('click', function(){
-    menuInResponsive.style.opacity = '1';
-    
-});
-
+$(responsive).click(function(){
+    $(menuInResponsive).toggleClass('opacity');
+  });
 
 
 

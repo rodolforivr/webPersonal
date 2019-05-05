@@ -162,8 +162,6 @@ header .container {
 @media screen and (max-width: 1024px) and (max-width: 800px) {
   header .container .responsiveBtn {
     display: inline-block; }
-  header .container nav {
-    opacity: 0; }
 
   .aboutMe .container {
     display: flex !important;
@@ -173,7 +171,8 @@ header .container {
       margin-top: 100px !important;
       min-width: 400px !important; } }
 @media screen and (max-width: 800px), (max-width: 700px) {
-  header .container nav {
+  header .container .menuDesp {
+    opacity: 0;
     top: 90px;
     left: 70%;
     position: absolute;
@@ -184,8 +183,10 @@ header .container {
     box-shadow: rgba(17, 34, 90, 0.2) 0px 0px 10px;
     padding: 20px;
     border-radius: 10px; }
-    header .container nav a {
+    header .container .menuDesp a {
       margin: 10px; }
+  header .container .opacity {
+    opacity: 1; }
 
   .rrss {
     position: relative;

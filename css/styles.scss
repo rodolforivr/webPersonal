@@ -263,9 +263,7 @@ header {
             .responsiveBtn {
                 display: inline-block;
             }
-            nav {
-                opacity:0;
-            }
+           
         }
     }
     .aboutMe {
@@ -288,13 +286,14 @@ header {
     header {
         .container{
             
-            nav {
+            
+            .menuDesp {
+                opacity: 0;
                 top: 90px;
                 left: 70%;
                 position: absolute;
                 display:flex !important;
                 flex-direction: column !important;
-                
                 text-align:right;
                 background: $whitBlue;
                 box-shadow: rgba(17, 34, 90, 0.2) 0px 0px 10px; 
@@ -304,6 +303,9 @@ header {
                      
                     margin: 10px;
                 }
+            }
+            .opacity {
+                opacity:1;
             }
         }
 
