@@ -14,7 +14,8 @@ a {
   -webkit-transition: ease-in-out 0.3s; }
 
 .container {
-  margin: 0px 100px; }
+  margin: 0px 8%;
+  max-width: 1920px; }
 
 header .container {
   display: flex;
@@ -24,6 +25,10 @@ header .container {
   header .container .logo img {
     width: 48px;
     border-radius: 100px;
+    vertical-align: top; }
+  header .container .responsiveBtn {
+    display: none;
+    width: 32px;
     vertical-align: top; }
   header .container nav a {
     text-decoration: none;
@@ -46,11 +51,11 @@ header .container {
 .aboutMe .container {
   display: flex; }
   .aboutMe .container .presentation p {
+    min-width: 520px;
     margin-top: 120px;
     color: #112258;
     font-size: 2em;
-    line-height: 50px;
-    min-width: 520px; }
+    line-height: 150%; }
   .aboutMe .container .presentation a {
     color: #ffffff;
     background: #3C6AFF;
@@ -66,11 +71,13 @@ header .container {
       background: none;
       color: #3C6AFF; }
   .aboutMe .container .mockup img {
-    width: 690px;
-    min-width: 690px;
+    width: 105%;
+    min-width: 120px;
+    max-width: 2400px;
     vertical-align: top;
     position: relative;
-    left: 30px; }
+    left: 30px;
+    top: 20px; }
 
 .rrss {
   position: absolute;
@@ -81,14 +88,26 @@ header .container {
     .rrss a:hover {
       color: #3C6AFF; }
 
+@keyframes modalEfecto {
+  from {
+    background: rgba(17, 34, 90, 0.1); }
+  to {
+    background: rgba(17, 34, 90, 0.7); } }
+@keyframes salidaModal {
+  from {
+    background: rgba(17, 34, 90, 0.7); }
+  to {
+    background: rgba(17, 34, 90, 0); } }
 #modal_contacto {
   display: none;
   z-index: 1000;
   position: absolute;
-  background: rgba(17, 34, 90, 0.8);
+  background: rgba(17, 34, 90, 0.7);
   top: 0px;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  animation-name: modalEfecto;
+  animation-duration: 1s; }
   #modal_contacto .container {
     display: flex;
     align-items: center;
@@ -139,5 +158,94 @@ header .container {
           #modal_contacto .container .contPrincipal .cont .btn:hover {
             color: #3C6AFF;
             background: none; }
+
+@media screen and (max-width: 1024px) and (max-width: 800px) {
+  header .container .responsiveBtn {
+    display: inline-block; }
+  header .container nav {
+    opacity: 0; }
+
+  .aboutMe .container {
+    display: flex !important;
+    flex-direction: column !important; }
+    .aboutMe .container .presentation p {
+      font-size: 1.8em !important;
+      margin-top: 100px !important;
+      min-width: 400px !important; } }
+@media screen and (max-width: 800px), (max-width: 700px) {
+  header .container nav {
+    top: 90px;
+    left: 70%;
+    position: absolute;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: right;
+    background: #F5F8FF;
+    box-shadow: rgba(17, 34, 90, 0.2) 0px 0px 10px;
+    padding: 20px;
+    border-radius: 10px; }
+    header .container nav a {
+      margin: 10px; }
+
+  .rrss {
+    position: relative;
+    top: 100px; } }
+@media screen and (max-width: 700px), (max-width: 600px) {
+  header .container nav {
+    top: 90px;
+    left: 65%; } }
+@media screen and (max-width: 600px) {
+  .aboutMe .container .presentation {
+    text-align: center; }
+  .aboutMe .container .mockup {
+    text-align: center;
+    margin: 80px 0px; }
+    .aboutMe .container .mockup img {
+      position: relative;
+      top: initial;
+      left: initial;
+      width: 80% !important; }
+
+  .rrss {
+    top: initial;
+    position: relative;
+    text-align: center;
+    margin: 40px 0px; } }
+@media screen and (max-width: 500px) {
+  header .container nav {
+    top: 90px;
+    left: 60%; } }
+@media screen and (max-width: 400px) {
+  header .container nav {
+    top: 90px;
+    left: 50%; }
+
+  .aboutMe .container .presentation p {
+    font-size: 1.2em !important;
+    margin-top: 100px !important;
+    min-width: 280px !important; }
+  .aboutMe .container .presentation a {
+    font-size: 0.875em; } }
+@media screen and (max-width: 400px) {
+  header .container nav {
+    top: 90px;
+    left: 40%; }
+
+  .rrss {
+    margin: 20px 0px; } }
+@media screen and (max-width: 320px) {
+  header .container nav {
+    top: 90px;
+    left: 40%; }
+
+  .aboutMe .container .presentation p {
+    font-size: 1.2em !important;
+    margin-top: 100px !important;
+    min-width: 260px !important; }
+  .aboutMe .container .presentation a {
+    font-size: 0.875em; }
+
+  .rrss {
+    margin: 20px 0px; } }
 
 /*# sourceMappingURL=styles.css.map */
